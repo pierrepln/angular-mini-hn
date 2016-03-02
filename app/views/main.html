@@ -1,0 +1,17 @@
+<hr>
+<div ng-show="loading" >Loading...</div>
+<div ng-hide="loading" > {{ err }}</div>
+<hr>
+<hr>
+
+<div ng-hide="loading" >
+  <div ng-repeat="story in stories" >
+
+    <p>{{story.count}}</p>
+    <a href="{{story.url}}" >{{story.title}}</a>
+    <p>{{story.score}} points by {{story.by}} | {{story.descendants}} comments</p>
+
+    <hr>
+
+  </div>
+</div>
